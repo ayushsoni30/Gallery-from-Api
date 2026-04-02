@@ -14,7 +14,7 @@ const App = () => {
 }
 
   async function getdata() {
-    const datainfo = await axios.get(`https://picsum.photos/v2/list?page=${Value}&limit=50`
+    const datainfo = await axios.get(`https://picsum.photos/v2/list?page=${Value}&limit=100`
     );
 
     setPicture(datainfo.data);
